@@ -6,3 +6,10 @@ class Solver
       (1..num).each { |p| num_factorial *= p }
       num_factorial
     end
+
+    def reverse(string)
+        split_str = string.chars
+        reverse_str = []
+        split_str.each { |str| reverse_str.unshift(str) }
+        reverse_str.join
+      end
