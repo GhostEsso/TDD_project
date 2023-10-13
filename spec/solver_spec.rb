@@ -6,4 +6,10 @@ describe Solver do
       expect(Solver.new.factorial(0)).to eq(1)
     end
   end
+
+  describe '#reverse' do
+    it 'reverses a string' do
+      expect(Solver.new.reverse('hello')).to eq('olleh')
+    end
+  end
 end
